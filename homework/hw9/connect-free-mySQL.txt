@@ -1,0 +1,12 @@
+﻿主機: ccw-mysql.mysql.database.azure.com
+
+帳號: user1
+
+密碼: 123@Ntut
+
+Port number: 3306
+
+資料庫名稱: firstdb
+
+資料表：books
+
