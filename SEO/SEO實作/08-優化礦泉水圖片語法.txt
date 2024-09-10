@@ -1,0 +1,9 @@
+﻿中文註解
+<img src="a1-環保礦泉水-雪山.png" alt="來自雪山的環保礦泉水" title="來自雪山的環保礦泉水" />
+
+
+英文註解
+
+<img src="a1-eco-friendly-mineral-water.png" alt="Eco-friendly mineral water from Xueshan Mountain" title="Eco-friendly mineral water from Xueshan Mountain" />
+
+
