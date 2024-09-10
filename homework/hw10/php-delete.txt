@@ -1,0 +1,33 @@
+﻿ <?php
+//(1).資料庫設定
+$dbServer = "主機";
+$dbName = "帳號";
+$dbUser = "密碼";
+$dbPass = "資料庫";
+
+//(2).建構物件: 連線資料庫伺服器
+$mysqli = @new mysqli($dbServer, $dbUser, $dbPass, $dbName);
+
+if ($mysqli->connect_errno)  // 存取成員
+  die("無法連線資料庫伺服器");
+
+//(3).設定連線的字元集為 UTF8 編碼
+$mysqli->set_charset("utf8");
+
+//(4).刪除一筆資料
+if(isset($_POST['欄位']))
+{
+    $sql="delete from 資料表 where 欄位 = {變數}";    
+
+    //(5).執行SQL指令
+    if( $mysqli->query($sql) ) 
+        echo "資料庫刪除記錄成功<br>";
+    else
+        die("資料庫刪除記錄失敗<br>"); 
+}
+
+//(6).釋放記憶體，關閉資料庫連接
+$mysqli->close();    
+
+
+?>

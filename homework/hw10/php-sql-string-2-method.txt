@@ -1,0 +1,23 @@
+﻿//在php的連接【sql語法，與php變數】有2種方法
+
+//方法1：
+$result = $conn->query("select * from books  where 價格 between ".$a1." and ".$a2." order by 價格 desc" );
+
+//方法2：
+$result = $conn->query("select * from books  where 價格 between {$a1} and {$a2} order by 價格 desc" );
+
+
+
+//範例：
+    //3.輸出全部資料
+    $rowall = $result->fetch_all(MYSQLI_ASSOC);
+    foreach($rowall as $item)
+    {
+	//方法1：
+        echo "<br>".$item["書籍編號"].'，'.$item["書籍名稱"].'，'.$item["價格"];
+
+	//方法2：
+        echo "<br>{$item["書籍編號"]}，{$item["書籍名稱"]}，{$item["價格"]}";
+    }        
+
+    

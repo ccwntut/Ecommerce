@@ -1,0 +1,27 @@
+﻿Bootstrap 5 在form裡面的多個元件(input-text, button..)如何在同一行上
+
+-------------------
+
+方法 ：使用 row 和 col
+将 form 元素包裹在 row 元素中。
+使用 col 元素将每个组件放置在不同的列中。
+使用 col-auto 或 col-md-auto 自动调整列宽度，以适应组件内容。
+
+
+------------------------
+
+    <form method="post" action="p2.php">
+        <div class="row">
+            <div class="col-auto offset-2">
+                <input name="c1" type="checkbox" class="form-check-input">是否低到高排序<br>
+            </div>
+            <div class="col-auto col-3">
+                <input name="t1" type="text" placeholder="顯示幾筆數據" class="form-control" >
+            </div>
+            <div class="col-auto offset-1">
+                <button name="b3" type="submit" class="btn btn-primary">依價格排序</button>
+            </div>
+
+        
+        </div>   
+    </form>

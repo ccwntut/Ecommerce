@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>B10001陳擎文</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+  <script>
+    function show()
+    {      
+      money = 0;
+      //複選題
+      if(c1.checked==true)
+      {
+        money += 500;
+      }
+      if(c2.checked==true)
+      {
+        money += 600;
+      }
+      if(c3.checked==true)
+      {
+        money += 700;
+      }
+
+
+      //單選題
+      if(r1.checked==true)
+      {
+        money += 70;
+      }
+      else if(r2.checked==true)
+      {
+        money += 60;
+      }
+      else if(r3.checked==true)
+      {
+        money += 50;
+      }
+
+      //顯示總金額
+      alert("總金額 = " + money)
+    }
+  </script>
+</head>
+
+<body>
+  <div id="main">	
+	<div id="menubar">
+      <ul class="lavaLampWithImage" id="lava_menu">
+        <li class="current"><a href="index.html">首頁</a></li>
+        <li><a href="a1.html">第1題</a></li>
+        <li><a href="a2.html">第2題</a></li>
+        <li><a href="a3.html">第3題</a></li>
+        <li><a href="a4.html">第4題</a></li>
+        <li><a href="a5.html">第5題</a></li>
+        <li><a href="a6.html">第6題</a></li>
+        <li><a href="a7.html">第7題</a></li>
+      </ul>
+	</div><!--close menubar-->	    
+	<div id="site_content">        	  
+	  <div id="header"> 
+        <div id="header_name"> 	  
+          <h1>陳擎文，作業11</h1>
+        </div><!--close header_name-->	
+        <div id="header_slogan"> 		
+	      <h2>Company Slogan Goes Here</h2>
+		 </div><!--close header_slogan-->	
+      </div><!--close header-->	
+	  <div id="banner_image">
+	    <div id="slider-wrapper">        
+          <div id="slider" class="nivoSlider">
+            <img src="images/slide1.jpg" alt="" />
+            <img src="images/slide2.jpg" alt="" />
+		  </div>
+		</div><!--close slider-wrapper-->
+	  </div><!--close banner_image-->			  
+      <div id="content">
+        <div class="content_item">
+          <p class="s1">大潤發購物
+          </p>
+          <hr>
+          <label class="s3">水果</label><br>
+          <p  class="s4">
+            <input class="s1" id="c1" type="checkbox">日本麝香葡萄1袋：500元<br>
+            <input class="s1" id="c2" type="checkbox">美國五爪蘋果10個：600元<br>
+            <input class="s1" id="c3" type="checkbox">泰國榴蓮：700元<br>
+          </p>
+         <label class="s3">飲料</label><br>
+         <p  class="s4">
+            <input class="s1" name="lcd" id="r1" type="radio">光泉柳橙汁：70元<br>
+            <input class="s1" name="lcd"  id="r2"  type="radio">義美無糖豆漿：60元<br>
+            <input class="s1" name="lcd"  id="r3"  type="radio">統一奶茶：50 元<br>
+          </p>
+
+          <p style="text-align: left">
+            <input onclick="show()" class="s2" type="button" value="計算金額">
+          </p>
+
+
+          <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
+          <h3>Place your heading here</h3>
+          <div style="width:200px; float:left; padding: 0px 20px 10px 0px;"><img alt="image" src="images/image.jpg" /></div>
+          <p>This website template uses the fancybox jquery tool to enhance the website, click on the image to the right to see. </p>
+          <p>Ut tincidunt, ante vel fermentum iaculis, turpis sem pulvinar diam, sit amet ullamcorper nibh dui ac nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos:</p>
+          <p>Vestibulum tempus urna vitae neque vehicula sit amet tristique felis ultrices. Phasellus eu laoreet mauris. Integer sit amet ante nec ipsum euismod hendrerit et eget sapien. Duis velit ante, semper nec dapibus adipiscing, pellentesque vitae orci. Etiam adipiscing, justo ut faucibus placerat, neque libero accumsan ipsum, non pellentesque ligula nibh id justo. Aenean tellus nisl, bibendum vitae sollicitudin id, faucibus ut mi.</p>
+          <p>Vestibulum tempus urna vitae neque vehicula sit amet tristique felis ultrices. Phasellus eu laoreet mauris. Integer sit amet ante nec ipsum euismod hendrerit et eget sapien. Duis velit ante, semper nec dapibus adipiscing, pellentesque vitae orci. Etiam adipiscing, justo ut faucibus placerat, neque libero accumsan ipsum, non pellentesque ligula nibh id justo. Aenean tellus nisl, bibendum vitae sollicitudin id, faucibus ut mi.</p>
+		</div><!--close content_item-->	
+	      
+		<div class="sidebar_container">   		  
+		  <div class="sidebar">
+            <div class="sidebar_item">
+                <h2>Latest Blog</h2>
+			    <h4>April 2012</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		          <a href="#">Read more</a>
+              </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->     		
+		  <div class="sidebar">
+            <div class="sidebar_item">
+              <h2>Latest Blog</h2>
+		  	  <h4>April 2012</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		        <a href="#">Read more</a>
+            </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->  
+		  <div class="sidebar">
+            <div class="sidebar_item">
+              <h2>Latest Blog</h2>
+			  <h4>April 2012</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		        <a href="#">Read more</a>
+            </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->  
+        </div><!--close sidebar_container-->	
+       <br style="clear:both;" />
+      </div><!--close content-->	
+    </div><!--close site_content-->	
+    <div id="footer">  
+	  <div id="footer_content">
+        版權所有，&copy; designed by <a href="http://validator.w3.org/check?uri=referer">陳擎文</a>，2023
+      </div><!--close footer_content-->	
+    </div><!--close footer-->	
+  </div><!--close main-->	
+</body>
+</html>
